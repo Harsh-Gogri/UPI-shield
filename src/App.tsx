@@ -18,7 +18,7 @@ export default function App() {
 
   useEffect(() => {
     const checkWidth = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth <= 768);
     };
     checkWidth();
     window.addEventListener('resize', checkWidth);
@@ -48,7 +48,7 @@ export default function App() {
     };
   }, []);
 
-  if (!isMobile && activeTab !== 'learn') {
+  if (!isMobile) {
     return <DesktopLanding />;
   }
 

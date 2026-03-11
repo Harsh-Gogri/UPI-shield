@@ -1,7 +1,6 @@
 import React from 'react';
 import { Radar, BookOpen, QrCode, AlertTriangle, Info } from 'lucide-react';
 import { cn } from '../lib/utils';
-import banner from '../../banner.jpg';
 
 interface HomeProps {
   onNavigate: (tab: 'radar' | 'guide' | 'scan' | 'report') => void;
@@ -14,7 +13,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
       <div className="relative w-full h-[160px] overflow-hidden">
         {/* Background Image */}
         <img 
-          src={banner}
+          src="/banner.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
