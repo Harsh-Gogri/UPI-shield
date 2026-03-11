@@ -28,7 +28,7 @@ export const Learn = ({ onBack }: { onBack: () => void }) => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-white overflow-hidden pt-4">
+    <div className="flex flex-col h-dvh bg-white overflow-hidden pt-4">
       {/* Header Navigation - flex: none */}
       <header className="flex-none px-4 py-0 flex items-center gap-2 border-b border-gray-50 bg-white sticky top-0 z-10">
         <button 

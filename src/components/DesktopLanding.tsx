@@ -5,7 +5,7 @@ export const DesktopLanding = () => {
   const url = "https://harsh-gogri.github.io/UPI-shield/";
 
   return (
-    <div className="min-h-screen bg-surface flex flex-col items-center justify-center p-6 text-center">
+    <div className="min-h-dvh bg-surface flex flex-col items-center justify-center p-6 text-center">
       <div className="max-w-md w-full flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4 text-onSurface">UPI Shield Prototype</h1>
         

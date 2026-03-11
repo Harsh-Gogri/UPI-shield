@@ -426,7 +426,7 @@ export const ScanQR = ({ onClose }: ScanQRProps) => {
                 animate={{ y: 0 }}
                 exit={{ y: '100%' }}
                 transition={{ type: 'spring', damping: 28, stiffness: 220 }}
-                className="w-full bg-white rounded-t-3xl px-6 pt-6 pb-8 shadow-2xl max-h-[90vh] flex flex-col"
+                className="w-full bg-white rounded-t-3xl px-6 pt-6 pb-8 shadow-2xl max-h-[90dvh] flex flex-col"
               >
                 {/* Sheet Header (Fixed) */}
                 <div className="flex-shrink-0">

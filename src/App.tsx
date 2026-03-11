@@ -63,7 +63,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-surface text-onSurface font-sans selection:bg-primary/20 flex flex-col">
+    <div className="min-h-dvh bg-surface text-onSurface font-sans selection:bg-primary/20 flex flex-col">
       {/* Main Content */}
       <main className={`flex-1 flex flex-col min-h-0 ${activeTab === 'guide' ? 'overflow-hidden' : 'overflow-y-auto no-scrollbar pb-32'}`}>
         <AnimatePresence mode="wait">
