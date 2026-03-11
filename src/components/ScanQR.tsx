@@ -340,15 +340,15 @@ export const ScanQR = ({ onClose }: ScanQRProps) => {
               </button>
 
               {/* Numeric Keypad (Fixed) */}
-              <div className="flex-shrink-0 pb-2 max-h-[40dvh] w-full">
-                <div className="grid grid-cols-3 grid-rows-4 gap-3 h-full">
+              <div className="flex-shrink-0 pb-2 h-[36dvh] w-full">
+                <div className="grid grid-cols-3 grid-rows-4 gap-[12px] h-full">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, '.', 0, 'backspace'].map((key) => {
                     if (key === 'backspace') {
                       return (
                         <button 
                           key="backspace"
                           onClick={handleBackspace}
-                          className="w-full aspect-[4/3] bg-[#FBFBFB] rounded-[18px] flex items-center justify-center text-[#222222] active:bg-gray-100 transition-colors"
+                          className="w-full h-full bg-[#FBFBFB] rounded-[18px] flex items-center justify-center text-[#222222] active:bg-gray-100 transition-colors"
                         >
                           <Delete size={24} />
                         </button>
@@ -358,7 +358,7 @@ export const ScanQR = ({ onClose }: ScanQRProps) => {
                       <button 
                         key={key}
                         onClick={() => key === '.' ? handleKeypad('.') : handleKeypad(key.toString())}
-                        className="w-full aspect-[4/3] bg-[#FBFBFB] rounded-[18px] flex items-center justify-center text-[24px] font-medium text-[#222222] active:bg-gray-100 transition-colors"
+                        className="w-full h-full bg-[#FBFBFB] rounded-[18px] flex items-center justify-center text-[24px] font-medium text-[#222222] active:bg-gray-100 transition-colors"
                       >
                         {key}
                       </button>
