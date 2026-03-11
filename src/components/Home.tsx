@@ -13,7 +13,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
       <div className="relative w-full h-[160px] overflow-hidden">
         {/* Background Image */}
         <img 
-          src="/banner.jpg"
+          src="/UPI-shield/banner.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
