@@ -10,21 +10,19 @@ export const Home = ({ onNavigate }: HomeProps) => {
   return (
     <div className="flex flex-col min-h-full">
       {/* Hero Banner Section */}
-      <div className="relative w-full h-[160px] overflow-hidden">
+      <div className="relative w-full overflow-hidden">
         {/* Background Image */}
         <img 
           src="/UPI-shield/banner.jpg"
           alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full h-auto block"
         />
-        {/* Dark overlay so text stays readable */}
-        <div className="absolute inset-0 bg-black/30" />
 
         {/* Header Overlay */}
         <div className="absolute inset-0 p-6 flex items-start z-10" style={{ paddingTop: '16px' }}>
           <div>
-            <h2 className="text-white/70 text-sm tracking-tight" style={{ fontWeight: 'normal', fontFamily: 'Arial' }}>Hi, Security Hero</h2>
-            <h1 className="text-white tracking-tighter" style={{ fontSize: '28px', fontWeight: 'bold' }}>UPI Shield</h1>
+            <h2 className="text-sm tracking-tight" style={{ color: '#222222', fontWeight: 'normal', fontFamily: 'Arial' }}>Hi, Security Hero</h2>
+            <h1 className="tracking-tighter" style={{ color: '#222222', fontSize: '24px', fontWeight: 'bold' }}>UPI Shield</h1>
           </div>
         </div>
       </div>
